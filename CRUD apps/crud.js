@@ -52,3 +52,10 @@ client.connect((err) => {
 app.listen(port, () => {
   console.log(`Server listening at http://localhost:${port}`)
 })
+/*This code sets up an "express" server and connects to a MongoDB database using the "mongodb" library. It then sets up four routes for performing CRUD operations on the "items" collection in the database:
+
+The "POST" route listens for requests to create a new item and inserts the item into the database using the "insertOne" method.
+The "GET" route listens for requests to read an item from the database and retrieves the item using the "findOne" method.
+The "PUT" route listens for requests to update an item and updates the item in the database using the "updateOne" method.
+The "DELETE" route listens for requests to delete an item and removes the item from the database using the "deleteOne" method.
+Each of these routes takes a request and a response object as arguments, and they use the request object to get the data needed to perform the operation (such as the id of the item to delete or the updated data to save). They then use the response object to send the result of the operation back to the client.*/
